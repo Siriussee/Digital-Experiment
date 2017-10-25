@@ -1,0 +1,4 @@
+Running: xsim.dir/AndLogic_tb_behav/xsimk.exe -simmode gui -wdb AndLogic_tb_behav.wdb -simrunnum 0 -socket 56315
+Design successfully loaded
+Design Loading Memory Usage: 21192 KB (Peak: 21192 KB)
+Design Loading CPU Usage: 77 ms

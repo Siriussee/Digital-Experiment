@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/Demo/Demo.srcs/sources_1/new/AndLogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/Demo/Demo.srcs/sim_1/new/AndLogic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
