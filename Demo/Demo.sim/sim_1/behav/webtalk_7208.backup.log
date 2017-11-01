@@ -2,11 +2,12 @@
 # Webtalk v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Wed Oct 25 22:00:19 2017
-# Process ID: 5688
+# Start of session at: Wed Oct 25 17:31:49 2017
+# Process ID: 7208
 # Current directory: D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/xsim.dir/AndLogic_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/xsim.dir/AndLogic_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/webtalk.log
 # Journal file: D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/xsim.dir/AndLogic_behav/webtalk/xsim_webtalk.tcl -notrace
+source D:/digital/Digital-Experiment/Demo/Demo.sim/sim_1/behav/xsim.dir/AndLogic_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 25 17:31:49 2017...
