@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/demo2/demo2.srcs/sources_1/bd/AndLogic/ipshared/xilinx.com/xup_and2_v1_0/xup_and2.srcs/sources_1/new/xup_and2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_and2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/demo2/demo2.srcs/sources_1/bd/AndLogic/ip/AndLogic_xup_and2_0_0/sim/AndLogic_xup_and2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic_xup_and2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/demo2/demo2.srcs/sources_1/bd/AndLogic/hdl/AndLogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/demo2/demo2.srcs/sources_1/bd/AndLogic/hdl/AndLogic_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/3_Create_IPI/sources/AndLogic_and_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndLogic_and_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/digital/Digital-Experiment/demo2/demo2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

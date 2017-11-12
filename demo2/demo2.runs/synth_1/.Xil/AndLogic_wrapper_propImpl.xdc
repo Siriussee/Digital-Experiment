@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/digital/Digital-Experiment/3_Create_IPI/sources/AndLogic_and_basys3.xdc rfile:../../../../3_Create_IPI/sources/AndLogic_and_basys3.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports a]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V16 [get_ports b]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U16 [get_ports y]
