@@ -172,23 +172,6 @@
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
-        <spirit:name>A1_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="B"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A1"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A1"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="B1"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_or_gate_0" spirit:portRef="B1"/>
-        <spirit:internalPortReference spirit:componentRef="six_not_gate_1" spirit:portRef="A2"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="B2"/>
-        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D3"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>A2_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="Cn"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A2"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A2"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>decode138_0_Y1_n</spirit:name>
         <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="Y1_n"/>
         <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_0" spirit:portRef="A1"/>
@@ -323,16 +306,6 @@
         <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D5"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>six_not_gate_0_Y3</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="six_not_gate_0" spirit:portRef="Y3"/>
-        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_0" spirit:portRef="D6"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>six_not_gate_0_Y4</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="six_not_gate_0" spirit:portRef="Y4"/>
-        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D6"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>A0_2</spirit:name>
         <spirit:externalPortReference spirit:portRef="S0"/>
         <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="A0"/>
@@ -349,17 +322,6 @@
         <spirit:externalPortReference spirit:portRef="S2"/>
         <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="A2"/>
         <spirit:internalPortReference spirit:componentRef="mux_8_to_1_0" spirit:portRef="A2"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>A_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="A"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A0"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="A1"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_or_gate_0" spirit:portRef="A1"/>
-        <spirit:internalPortReference spirit:componentRef="six_not_gate_1" spirit:portRef="A1"/>
-        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="A3"/>
-        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D2"/>
-        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A0"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>six_not_gate_1_Y1</spirit:name>
@@ -458,6 +420,44 @@
         <spirit:internalPortReference spirit:componentRef="six_not_gate_2" spirit:portRef="Y4"/>
         <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="E1"/>
         <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="E1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>six_not_gate_0_Y3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="six_not_gate_0" spirit:portRef="Y3"/>
+        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_0" spirit:portRef="D6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>six_not_gate_0_Y4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="six_not_gate_0" spirit:portRef="Y4"/>
+        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_or_gate_0" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="six_not_gate_1" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="A3"/>
+        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D2"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A2"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="B1"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_3" spirit:portRef="B2"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_or_gate_0" spirit:portRef="B1"/>
+        <spirit:internalPortReference spirit:componentRef="six_not_gate_1" spirit:portRef="A2"/>
+        <spirit:internalPortReference spirit:componentRef="mux_8_to_1_1" spirit:portRef="D3"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Cn_2</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Cn"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_0" spirit:portRef="A0"/>
+        <spirit:internalPortReference spirit:componentRef="decode138_1" spirit:portRef="A0"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

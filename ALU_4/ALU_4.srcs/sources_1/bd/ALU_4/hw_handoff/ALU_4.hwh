@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 14 23:25:06 2017" VIVADOVERSION="2015.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="ALU_4" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="External_Ports_Cn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="Cn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="GND"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="GND"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="GND"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="GND"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="S0"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="S0"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="S0"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="S0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="S1"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="S1"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="S1"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="S1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S2" SIGIS="undef" SIGNAME="External_Ports_S2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="S2"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="S2"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="S2"/>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="S2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_1" SIGIS="undef" SIGNAME="External_Ports_A_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_1" SIGIS="undef" SIGNAME="External_Ports_B_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_2" SIGIS="undef" SIGNAME="External_Ports_A_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_2" SIGIS="undef" SIGNAME="External_Ports_B_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_3" SIGIS="undef" SIGNAME="External_Ports_A_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_3" SIGIS="undef" SIGNAME="External_Ports_B_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="ALU_1_wrapper_0_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_1_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y_2" SIGIS="undef" SIGNAME="ALU_1_wrapper_2_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Cn_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_3_Cn_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="Cn_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y_3" SIGIS="undef" SIGNAME="ALU_1_wrapper_3_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/ALU_1_wrapper_0" HWVERSION="1.0" INSTANCE="ALU_1_wrapper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_1_wrapper" VLNV="Sirius:user:ALU_1_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_4_ALU_1_wrapper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="External_Ports_Cn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cn_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_0_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="Cn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S2" SIGIS="undef" SIGNAME="External_Ports_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="ALU_1_wrapper_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ALU_1_wrapper_1" HWVERSION="1.0" INSTANCE="ALU_1_wrapper_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_1_wrapper" VLNV="Sirius:user:ALU_1_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_4_ALU_1_wrapper_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="ALU_1_wrapper_0_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_0" PORT="Cn_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cn_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_1_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="Cn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S2" SIGIS="undef" SIGNAME="External_Ports_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="ALU_1_wrapper_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ALU_1_wrapper_2" HWVERSION="1.0" INSTANCE="ALU_1_wrapper_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_1_wrapper" VLNV="Sirius:user:ALU_1_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_4_ALU_1_wrapper_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="ALU_1_wrapper_1_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_1" PORT="Cn_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cn_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_2_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_3" PORT="Cn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S2" SIGIS="undef" SIGNAME="External_Ports_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="ALU_1_wrapper_2_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ALU_1_wrapper_3" HWVERSION="1.0" INSTANCE="ALU_1_wrapper_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_1_wrapper" VLNV="Sirius:user:ALU_1_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_4_ALU_1_wrapper_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="ALU_1_wrapper_2_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_1_wrapper_2" PORT="Cn_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cn_1" SIGIS="undef" SIGNAME="ALU_1_wrapper_3_Cn_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cn_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S2" SIGIS="undef" SIGNAME="External_Ports_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="ALU_1_wrapper_3_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

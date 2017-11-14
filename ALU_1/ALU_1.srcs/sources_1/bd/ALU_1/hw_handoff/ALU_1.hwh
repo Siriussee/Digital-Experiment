@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 12 11:21:36 2017" VIVADOVERSION="2015.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 14 22:43:06 2017" VIVADOVERSION="2015.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="ALU_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="decode138_0" PORT="A1"/>
-        <CONNECTION INSTANCE="decode138_1" PORT="A1"/>
         <CONNECTION INSTANCE="four_2_input_and_gate_3" PORT="B1"/>
+        <CONNECTION INSTANCE="four_2_input_and_gate_3" PORT="B2"/>
         <CONNECTION INSTANCE="four_2_input_or_gate_0" PORT="B1"/>
         <CONNECTION INSTANCE="six_not_gate_1" PORT="A2"/>
-        <CONNECTION INSTANCE="four_2_input_and_gate_3" PORT="B2"/>
         <CONNECTION INSTANCE="mux_8_to_1_1" PORT="D3"/>
+        <CONNECTION INSTANCE="decode138_0" PORT="A1"/>
+        <CONNECTION INSTANCE="decode138_1" PORT="A1"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="Cn" SIGIS="undef" SIGNAME="External_Ports_Cn">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="decode138_0" PORT="A2"/>
-        <CONNECTION INSTANCE="decode138_1" PORT="A2"/>
+        <CONNECTION INSTANCE="decode138_0" PORT="A0"/>
+        <CONNECTION INSTANCE="decode138_1" PORT="A0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
@@ -41,13 +41,13 @@
     </PORT>
     <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="decode138_0" PORT="A0"/>
         <CONNECTION INSTANCE="four_2_input_and_gate_3" PORT="A1"/>
         <CONNECTION INSTANCE="four_2_input_or_gate_0" PORT="A1"/>
         <CONNECTION INSTANCE="six_not_gate_1" PORT="A1"/>
         <CONNECTION INSTANCE="four_2_input_and_gate_3" PORT="A3"/>
         <CONNECTION INSTANCE="mux_8_to_1_1" PORT="D2"/>
-        <CONNECTION INSTANCE="decode138_1" PORT="A0"/>
+        <CONNECTION INSTANCE="decode138_0" PORT="A2"/>
+        <CONNECTION INSTANCE="decode138_1" PORT="A2"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
@@ -99,9 +99,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A">
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_Cn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_B">
@@ -109,9 +109,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="B"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_Cn">
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_A">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="Cn"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="E1" SIGIS="undef" SIGNAME="six_not_gate_2_Y4">
@@ -176,9 +176,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A">
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_Cn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_B">
@@ -186,9 +186,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="B"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_Cn">
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_A">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="Cn"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="E1" SIGIS="undef" SIGNAME="six_not_gate_2_Y4">

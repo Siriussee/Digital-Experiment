@@ -48,10 +48,11 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint ALU_1_wrapper_routed.dcp
   set_property webtalk.parent_dir D:/digital/Digital-Experiment/ALU_1/ALU_1.cache/wt [current_project]
   catch { write_mem_info -force ALU_1_wrapper.mmi }
-  write_bitstream -force ALU_1_wrapper.bit 
+  write_bitstream -force ALU_1_wrapper.bit -bin_file
   catch { write_sysdef -hwdef ALU_1_wrapper.hwdef -bitfile ALU_1_wrapper.bit -meminfo ALU_1_wrapper.mmi -file ALU_1_wrapper.sysdef }
   close_msg_db -file write_bitstream.pb
 } RESULT]

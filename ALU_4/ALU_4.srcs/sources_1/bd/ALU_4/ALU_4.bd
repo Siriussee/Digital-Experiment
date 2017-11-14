@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2015.3" bd:top="ALU_4" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ALU_4</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="ALU_4_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>A</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Cn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>GND</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>S0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>S1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>S2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>A_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>A_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>A_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Cn_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ALU_4_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>ALU_1_wrapper_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ALU_1_wrapper" spirit:vendor="Sirius" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ALU_4_ALU_1_wrapper_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ALU_1_wrapper_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ALU_1_wrapper" spirit:vendor="Sirius" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ALU_4_ALU_1_wrapper_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ALU_1_wrapper_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ALU_1_wrapper" spirit:vendor="Sirius" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ALU_4_ALU_1_wrapper_0_2</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ALU_1_wrapper_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ALU_1_wrapper" spirit:vendor="Sirius" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ALU_4_ALU_1_wrapper_0_3</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_0_Cn_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="Cn_1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="Cn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_1_Cn_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="Cn_1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="Cn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_2_Cn_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="Cn_1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="Cn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Cn_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Cn"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="Cn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>GND_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="GND"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="GND"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="GND"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="GND"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="GND"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="S0"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="S0"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="S0"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="S0"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="S0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="S1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="S1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="S1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="S1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="S1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="S2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="S2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="S2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="S2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="S2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A_1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B_1"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A_2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B_2"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A_3"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B_3"/>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_0_Y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_0" spirit:portRef="Y"/>
+        <spirit:externalPortReference spirit:portRef="Y"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_1_Y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_1" spirit:portRef="Y"/>
+        <spirit:externalPortReference spirit:portRef="Y_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_2_Y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_2" spirit:portRef="Y"/>
+        <spirit:externalPortReference spirit:portRef="Y_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_3_Cn_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="Cn_1"/>
+        <spirit:externalPortReference spirit:portRef="Cn_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU_1_wrapper_3_Y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU_1_wrapper_3" spirit:portRef="Y"/>
+        <spirit:externalPortReference spirit:portRef="Y_3"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

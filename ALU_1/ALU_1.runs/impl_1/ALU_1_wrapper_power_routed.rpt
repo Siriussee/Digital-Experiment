@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date             : Sun Nov 12 11:44:01 2017
+| Date             : Tue Nov 14 22:44:11 2017
 | Host             : SiriusPC running 64-bit major release  (build 9200)
 | Command          : 
 | Design           : ALU_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 2.204 |
-| Dynamic (W)              | 2.127 |
+| Total On-Chip Power (W)  | 2.207 |
+| Dynamic (W)              | 2.130 |
 | Device Static (W)        | 0.077 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 74.0  |
@@ -50,11 +50,11 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.083 |       35 |       --- |             --- |
-|   LUT as Logic |     0.083 |       32 |     20800 |            0.15 |
-| Signals        |     0.076 |       42 |       --- |             --- |
+|   LUT as Logic |     0.083 |       28 |     20800 |            0.13 |
+| Signals        |     0.079 |       42 |       --- |             --- |
 | I/O            |     1.968 |        9 |       106 |            8.49 |
 | Static Power   |     0.077 |          |           |                 |
-| Total          |     2.204 |          |           |                 |
+| Total          |     2.207 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -64,7 +64,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.201 |       0.187 |      0.014 |
+| Vccint    |       1.000 |     0.204 |       0.190 |      0.014 |
 | Vccaux    |       1.800 |     0.084 |       0.071 |      0.013 |
 | Vcco33    |       3.300 |     0.550 |       0.549 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -131,19 +131,19 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| ALU_1_wrapper               |     2.127 |
-|   ALU_1_i                   |     0.117 |
-|     decode138_0             |     0.017 |
-|       inst                  |     0.017 |
+| ALU_1_wrapper               |     2.130 |
+|   ALU_1_i                   |     0.118 |
+|     decode138_0             |     0.018 |
+|       inst                  |     0.018 |
 |     decode138_1             |     0.014 |
 |       inst                  |     0.014 |
-|     four_2_input_and_gate_0 |     0.007 |
-|     four_2_input_and_gate_1 |     0.013 |
-|     four_2_input_and_gate_2 |     0.006 |
+|     four_2_input_and_gate_0 |     0.006 |
+|     four_2_input_and_gate_1 |     0.011 |
+|     four_2_input_and_gate_2 |     0.007 |
 |     four_2_input_and_gate_3 |     0.008 |
-|     four_2_input_or_gate_0  |     0.005 |
-|     mux_8_to_1_0            |     0.022 |
-|     mux_8_to_1_1            |     0.024 |
+|     four_2_input_or_gate_0  |     0.008 |
+|     mux_8_to_1_0            |     0.024 |
+|     mux_8_to_1_1            |     0.021 |
 |     six_not_gate_0          |     0.000 |
 |     six_not_gate_1          |     0.000 |
 |     six_not_gate_2          |     0.000 |

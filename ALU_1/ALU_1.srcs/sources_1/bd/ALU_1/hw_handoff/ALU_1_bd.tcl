@@ -193,12 +193,12 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net A0_2 [get_bd_ports S0] [get_bd_pins mux_8_to_1_0/A0] [get_bd_pins mux_8_to_1_1/A0]
-  connect_bd_net -net A1_1 [get_bd_ports B] [get_bd_pins decode138_0/A1] [get_bd_pins decode138_1/A1] [get_bd_pins four_2_input_and_gate_3/B1] [get_bd_pins four_2_input_and_gate_3/B2] [get_bd_pins four_2_input_or_gate_0/B1] [get_bd_pins mux_8_to_1_1/D3] [get_bd_pins six_not_gate_1/A2]
   connect_bd_net -net A1_2 [get_bd_ports S1] [get_bd_pins mux_8_to_1_0/A1] [get_bd_pins mux_8_to_1_1/A1]
-  connect_bd_net -net A2_1 [get_bd_ports Cn] [get_bd_pins decode138_0/A2] [get_bd_pins decode138_1/A2]
   connect_bd_net -net A2_2 [get_bd_ports S2] [get_bd_pins mux_8_to_1_0/A2] [get_bd_pins mux_8_to_1_1/A2]
   connect_bd_net -net A4_1 [get_bd_ports GND] [get_bd_pins decode138_0/E2_n] [get_bd_pins decode138_0/E3_n] [get_bd_pins decode138_1/E2_n] [get_bd_pins decode138_1/E3_n] [get_bd_pins four_2_input_and_gate_3/A4] [get_bd_pins four_2_input_and_gate_3/B4] [get_bd_pins four_2_input_or_gate_0/A3] [get_bd_pins four_2_input_or_gate_0/A4] [get_bd_pins four_2_input_or_gate_0/B3] [get_bd_pins four_2_input_or_gate_0/B4] [get_bd_pins mux_8_to_1_0/D7] [get_bd_pins mux_8_to_1_0/S_n] [get_bd_pins mux_8_to_1_1/D7] [get_bd_pins mux_8_to_1_1/S_n] [get_bd_pins six_not_gate_0/A5] [get_bd_pins six_not_gate_0/A6] [get_bd_pins six_not_gate_1/A3] [get_bd_pins six_not_gate_1/A4] [get_bd_pins six_not_gate_1/A5] [get_bd_pins six_not_gate_1/A6] [get_bd_pins six_not_gate_2/A4] [get_bd_pins six_not_gate_2/A5] [get_bd_pins six_not_gate_2/A6]
-  connect_bd_net -net A_1 [get_bd_ports A] [get_bd_pins decode138_0/A0] [get_bd_pins decode138_1/A0] [get_bd_pins four_2_input_and_gate_3/A1] [get_bd_pins four_2_input_and_gate_3/A3] [get_bd_pins four_2_input_or_gate_0/A1] [get_bd_pins mux_8_to_1_1/D2] [get_bd_pins six_not_gate_1/A1]
+  connect_bd_net -net A_1 [get_bd_ports A] [get_bd_pins decode138_0/A2] [get_bd_pins decode138_1/A2] [get_bd_pins four_2_input_and_gate_3/A1] [get_bd_pins four_2_input_and_gate_3/A3] [get_bd_pins four_2_input_or_gate_0/A1] [get_bd_pins mux_8_to_1_1/D2] [get_bd_pins six_not_gate_1/A1]
+  connect_bd_net -net B_1 [get_bd_ports B] [get_bd_pins decode138_0/A1] [get_bd_pins decode138_1/A1] [get_bd_pins four_2_input_and_gate_3/B1] [get_bd_pins four_2_input_and_gate_3/B2] [get_bd_pins four_2_input_or_gate_0/B1] [get_bd_pins mux_8_to_1_1/D3] [get_bd_pins six_not_gate_1/A2]
+  connect_bd_net -net Cn_2 [get_bd_ports Cn] [get_bd_pins decode138_0/A0] [get_bd_pins decode138_1/A0]
   connect_bd_net -net decode138_0_Y1_n [get_bd_pins decode138_0/Y1_n] [get_bd_pins four_2_input_and_gate_0/A1]
   connect_bd_net -net decode138_0_Y2_n [get_bd_pins decode138_0/Y2_n] [get_bd_pins four_2_input_and_gate_0/B1]
   connect_bd_net -net decode138_0_Y3_n [get_bd_pins decode138_0/Y3_n] [get_bd_pins four_2_input_and_gate_0/A3]

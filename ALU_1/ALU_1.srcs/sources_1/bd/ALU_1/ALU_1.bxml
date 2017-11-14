@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="ALU_1" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1510456896"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1510456896"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1510456896"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1510670586"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1510670586"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1510670586"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\ALU_1_four_2_input_and_gate_0_0\ALU_1_four_2_input_and_gate_0_0.xci" Type="IP">
         <Instance HierarchyPath="four_2_input_and_gate_0"/>
