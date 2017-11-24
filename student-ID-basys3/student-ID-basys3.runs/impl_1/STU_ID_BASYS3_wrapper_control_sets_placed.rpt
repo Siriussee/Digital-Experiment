@@ -1,0 +1,60 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Fri Nov 24 13:28:57 2017
+| Host         : SiriusPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file STU_ID_BASYS3_wrapper_control_sets_placed.rpt
+| Design       : STU_ID_BASYS3_wrapper
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     7 |
+| Minimum Number of register sites lost to control set restrictions |    39 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            5 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+---------------+------------------------------------------------+------------------+----------------+
+|                Clock Signal                | Enable Signal |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------+------------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG                             |               |                                                |                1 |              1 |
+| ~STU_ID_BASYS3_i/decimal_counter_0/inst/Qa |               |                                                |                1 |              1 |
+| ~STU_ID_BASYS3_i/clk_div_0/inst/clk_out    |               |                                                |                1 |              1 |
+| ~STU_ID_BASYS3_i/clk_div_0/inst/clk_out    |               | GND_IBUF                                       |                1 |              1 |
+|  GND_IBUF                                  |               |                                                |                2 |              2 |
+| ~STU_ID_BASYS3_i/decimal_counter_0/inst/Qa |               | GND_IBUF                                       |                1 |              3 |
+|  CLK_IBUF_BUFG                             |               | STU_ID_BASYS3_i/clk_div_0/inst/clk_out_i_1_n_0 |                8 |             32 |
++--------------------------------------------+---------------+------------------------------------------------+------------------+----------------+
+
+
