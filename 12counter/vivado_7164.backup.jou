@@ -1,0 +1,323 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Dec 06 12:00:55 2017
+# Process ID: 7164
+# Current directory: D:/digital/Digital-Experiment/12counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10800 D:\digital\Digital-Experiment\12counter\12counter.xpr
+# Log file: D:/digital/Digital-Experiment/12counter/vivado.log
+# Journal file: D:/digital/Digital-Experiment/12counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/digital/Digital-Experiment/12counter/12counter.xpr
+
+update_compile_order -fileset sources_1
+open_bd_design {D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd}
+open_bd_design {D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:XUP:four_2_input_nand_gate:1.0 four_2_input_nand_gate_0
+endgroup
+set_property location {1 118 246} [get_bd_cells six_not_gate_0]
+set_property location {2 343 764} [get_bd_cells four_2_input_nand_gate_0]
+set_property location {2 342 662} [get_bd_cells four_2_input_nand_gate_0]
+set_property location {1 128 591} [get_bd_cells four_2_input_and_gate_1]
+set_property location {3 610 658} [get_bd_cells four_2_input_nand_gate_0]
+connect_bd_net [get_bd_pins xup_jk_0/Q1] [get_bd_pins four_2_input_nand_gate_0/A1]
+connect_bd_net [get_bd_pins xup_jk_0/Q2] [get_bd_pins four_2_input_nand_gate_0/B1]
+connect_bd_net [get_bd_pins xup_jk_1/Q1] [get_bd_pins four_2_input_nand_gate_0/A2]
+connect_bd_net [get_bd_pins xup_jk_1/Q2] [get_bd_pins four_2_input_nand_gate_0/B2]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/Y1] [get_bd_pins four_2_input_nand_gate_0/A3]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/Y2] [get_bd_pins four_2_input_nand_gate_0/B3]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/Y3] [get_bd_pins four_2_input_and_gate_0/B3]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/A4] [get_bd_pins xup_jk_0/Q1_n]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/B4] [get_bd_pins xup_jk_0/Q2_n]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:XUP:tri_3_input_nand_gate:1.0 tri_3_input_nand_gate_0
+endgroup
+set_property location {4 621 974} [get_bd_cells tri_3_input_nand_gate_0]
+copy_bd_objs /  [get_bd_cells {four_2_input_nand_gate_0}]
+set_property location {4 886 691} [get_bd_cells four_2_input_nand_gate_1]
+set_property location {3 649 907} [get_bd_cells tri_3_input_nand_gate_0]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/A1] [get_bd_pins xup_jk_0/Q1_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/B1] [get_bd_pins xup_jk_0/Q2_n]
+undo
+undo
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/A1] [get_bd_pins xup_jk_0/Q2_n]
+connect_bd_net [get_bd_pins xup_jk_1/Q1_n] [get_bd_pins tri_3_input_nand_gate_0/B1]
+connect_bd_net [get_bd_pins xup_jk_1/Q2_n] [get_bd_pins tri_3_input_nand_gate_0/C1]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/Y4] [get_bd_pins four_2_input_nand_gate_1/A1]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/Y1] [get_bd_pins four_2_input_nand_gate_1/B1]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/Y1] [get_bd_pins four_2_input_and_gate_0/B4]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/A2] [get_bd_pins xup_jk_0/Q1_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/B2] [get_bd_pins xup_jk_0/Q2_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/C2] [get_bd_pins xup_jk_1/Q1_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/Y1] [get_bd_pins four_2_input_nand_gate_1/A2]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/Y2] [get_bd_pins four_2_input_nand_gate_1/B2]
+startgroup
+connect_bd_net [get_bd_pins four_2_input_or_gate_0/Y2] [get_bd_pins xup_jk_1/J1]
+endgroup
+connect_bd_net [get_bd_pins xup_jk_1/K1] [get_bd_pins four_2_input_or_gate_0/Y2]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/A3] [get_bd_pins tri_3_input_nand_gate_0/Y2]
+delete_bd_objs [get_bd_nets tri_3_input_nand_gate_0_Y2]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/Y2] [get_bd_pins four_2_input_nand_gate_1/B2]
+set_property location {5 1125 688} [get_bd_cells four_2_input_and_gate_1]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/Y2] [get_bd_pins four_2_input_and_gate_1/A1]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/A3] [get_bd_pins xup_jk_0/Q1]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/B3] [get_bd_pins xup_jk_0/Q2]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/C3] [get_bd_pins xup_jk_1/Q1]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_0/Y3] [get_bd_pins four_2_input_nand_gate_1/A3]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/B3] [get_bd_pins four_2_input_nand_gate_0/Y2]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/Y3] [get_bd_pins four_2_input_and_gate_1/A2]
+connect_bd_net [get_bd_ports SWI] [get_bd_pins four_2_input_and_gate_1/B2]
+connect_bd_net [get_bd_pins four_2_input_and_gate_1/B1] [get_bd_pins six_not_gate_0/Y2]
+connect_bd_net [get_bd_pins four_2_input_and_gate_1/Y1] [get_bd_pins four_2_input_or_gate_0/A3]
+connect_bd_net [get_bd_pins four_2_input_and_gate_1/Y2] [get_bd_pins four_2_input_or_gate_0/B3]
+connect_bd_net [get_bd_pins four_2_input_or_gate_0/Y3] [get_bd_pins xup_jk_1/J2]
+connect_bd_net [get_bd_pins xup_jk_1/K2] [get_bd_pins four_2_input_or_gate_0/Y3]
+save_bd_design
+copy_bd_objs /  [get_bd_cells {decode138_0}]
+set_property location {7 1561 541} [get_bd_cells decode138_1]
+set_property location {5 1267 88} [get_bd_cells decode138_1]
+connect_bd_net [get_bd_pins decode138_1/A0] [get_bd_pins xup_jk_0/Q1]
+connect_bd_net [get_bd_pins decode138_1/A1] [get_bd_pins xup_jk_0/Q2]
+connect_bd_net [get_bd_pins decode138_1/A2] [get_bd_pins xup_jk_1/Q1]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decode138_1/E2_n]
+connect_bd_net [get_bd_pins decode138_1/E3_n] [get_bd_pins decode138_1/E2_n]
+connect_bd_net [get_bd_pins decode138_1/E1] [get_bd_pins six_not_gate_0/Y1]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:XUP:two_4_input_nand_gate:1.0 two_4_input_nand_gate_0
+endgroup
+set_property location {6 1435 114} [get_bd_cells two_4_input_nand_gate_0]
+copy_bd_objs /  [get_bd_cells {four_2_input_nand_gate_0}]
+set_property location {6 1450 515} [get_bd_cells four_2_input_nand_gate_2]
+copy_bd_objs /  [get_bd_cells {tri_3_input_nand_gate_0}]
+set_property location {6 1488 753} [get_bd_cells tri_3_input_nand_gate_1]
+set_property location {7 1617 37} [get_bd_cells two_4_input_nand_gate_0]
+set_property location {7 1596 257} [get_bd_cells four_2_input_nand_gate_2]
+set_property location {7 1603 488} [get_bd_cells tri_3_input_nand_gate_1]
+connect_bd_net [get_bd_pins decode138_1/Y2_n] [get_bd_pins two_4_input_nand_gate_0/A1]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/B1] [get_bd_pins decode138_1/Y3_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/C1] [get_bd_pins decode138_1/Y4_n]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_2/A1] [get_bd_pins decode138_1/Y0_n]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_2/B1] [get_bd_pins decode138_1/Y1_n]
+delete_bd_objs [get_bd_nets decode138_1_Y2_n]
+delete_bd_objs [get_bd_nets decode138_1_Y3_n]
+delete_bd_objs [get_bd_nets decode138_1_Y4_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_1/A1] [get_bd_pins decode138_1/Y2_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_1/B1] [get_bd_pins decode138_1/Y3_n]
+connect_bd_net [get_bd_pins tri_3_input_nand_gate_1/C1] [get_bd_pins decode138_1/Y4_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/A1] [get_bd_pins decode138_1/Y4_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/B1] [get_bd_pins decode138_1/Y5_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/C1] [get_bd_pins decode138_1/Y6_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/D1] [get_bd_pins decode138_1/Y7_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/A2] [get_bd_pins decode138_1/Y2_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/B2] [get_bd_pins decode138_1/Y3_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/C2] [get_bd_pins decode138_1/Y6_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/D2] [get_bd_pins decode138_1/Y7_n]
+copy_bd_objs /  [get_bd_cells {four_2_input_and_gate_1}]
+set_property location {8 1820 246} [get_bd_cells four_2_input_and_gate_2]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/A1] [get_bd_pins tri_3_input_nand_gate_1/Y1]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/B1] [get_bd_pins xup_jk_1/Q2]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_2/Y1] [get_bd_pins four_2_input_and_gate_2/A2]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/B2] [get_bd_pins xup_jk_1/Q2]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/Y1] [get_bd_pins four_2_input_and_gate_2/A3]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/B3] [get_bd_pins xup_jk_1/Q2_n]
+connect_bd_net [get_bd_pins two_4_input_nand_gate_0/Y2] [get_bd_pins four_2_input_and_gate_2/A4]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/B4] [get_bd_pins xup_jk_1/Q2]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/Y4] [get_bd_pins four_2_input_or_gate_0/A4]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:XUP:two_4_input_and_gate:1.0 two_4_input_and_gate_0
+endgroup
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/Y1] [get_bd_pins two_4_input_and_gate_0/A1]
+set_property location {7 1667 867} [get_bd_cells two_4_input_and_gate_0]
+delete_bd_objs [get_bd_nets two_4_input_and_gate_0_Y1]
+set_property location {6 1458 667} [get_bd_cells two_4_input_and_gate_0]
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/A1] [get_bd_pins xup_jk_1/Q2]
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/B1] [get_bd_pins xup_jk_1/Q1]
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/C1] [get_bd_pins xup_jk_0/Q2_n]
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/D1] [get_bd_pins xup_jk_0/Q1]
+delete_bd_objs [get_bd_nets xup_jk_1_Q2]
+undo
+disconnect_bd_net /xup_jk_1_Q2 [get_bd_pins four_2_input_and_gate_2/B4]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/B4] [get_bd_pins xup_jk_1/Q2_n]
+connect_bd_net [get_bd_pins two_4_input_and_gate_0/Y1] [get_bd_pins four_2_input_or_gate_0/B4]
+set_property location {3 648 -717} [get_bd_cells mux_8_to_1_3]
+set_property location {3.5 793 -737} [get_bd_cells mux_8_to_1_1]
+set_property location {5 1065 -713} [get_bd_cells mux_8_to_1_0]
+set_property location {6 1264 -683} [get_bd_cells mux_8_to_1_2]
+set_property location {3 483 -372} [get_bd_cells mux_8_to_1_3]
+set_property location {3 550 -743} [get_bd_cells mux_8_to_1_1]
+set_property location {3.5 786 -745} [get_bd_cells mux_8_to_1_0]
+set_property location {4 775 -382} [get_bd_cells mux_8_to_1_2]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:xup:decimal_counter:1.0 decimal_counter_0
+endgroup
+set_property location {2.5 384 -357} [get_bd_cells decimal_counter_0]
+connect_bd_net [get_bd_pins clk_div_0/clk_out] [get_bd_pins decimal_counter_0/CP1_n]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decimal_counter_0/R0_2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decimal_counter_0/R9_1]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decimal_counter_0/R0_1]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decimal_counter_0/R9_2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decimal_counter_0/CP2_n]
+connect_bd_net [get_bd_pins decimal_counter_0/Qa] [get_bd_pins mux_8_to_1_3/A2]
+connect_bd_net [get_bd_pins decimal_counter_0/Qb] [get_bd_pins mux_8_to_1_3/A1]
+connect_bd_net [get_bd_pins decimal_counter_0/Qc] [get_bd_pins mux_8_to_1_3/A0]
+connect_bd_net [get_bd_pins mux_8_to_1_1/A2] [get_bd_pins decimal_counter_0/Qa]
+connect_bd_net [get_bd_pins mux_8_to_1_1/A1] [get_bd_pins decimal_counter_0/Qb]
+connect_bd_net [get_bd_pins mux_8_to_1_1/A0] [get_bd_pins decimal_counter_0/Qc]
+connect_bd_net [get_bd_pins mux_8_to_1_0/A2] [get_bd_pins decimal_counter_0/Qa]
+connect_bd_net [get_bd_pins mux_8_to_1_0/A1] [get_bd_pins decimal_counter_0/Qb]
+connect_bd_net [get_bd_pins mux_8_to_1_0/A0] [get_bd_pins decimal_counter_0/Qc]
+connect_bd_net [get_bd_pins mux_8_to_1_2/A2] [get_bd_pins decimal_counter_0/Qa]
+connect_bd_net [get_bd_pins mux_8_to_1_2/A1] [get_bd_pins decimal_counter_0/Qb]
+connect_bd_net [get_bd_pins mux_8_to_1_2/A0] [get_bd_pins decimal_counter_0/Qc]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_1/D7]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_3/D7]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_0/D7]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/Y1] [get_bd_pins mux_8_to_1_2/D0]
+disconnect_bd_net /A1_1 [get_bd_pins mux_8_to_1_1/D7]
+disconnect_bd_net /A1_1 [get_bd_pins mux_8_to_1_0/D7]
+disconnect_bd_net /A1_1 [get_bd_pins mux_8_to_1_3/D7]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_3/D0]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_1/D0]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_0/D0]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/Y2] [get_bd_pins mux_8_to_1_1/D1]
+connect_bd_net [get_bd_pins four_2_input_and_gate_2/Y3] [get_bd_pins mux_8_to_1_3/D1]
+connect_bd_net [get_bd_pins mux_8_to_1_0/D1] [get_bd_pins four_2_input_or_gate_0/Y4]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D1] [get_bd_pins xup_jk_0/Q1]
+set_property location {6 1265 -338} [get_bd_cells decode138_0]
+connect_bd_net [get_bd_pins decode138_0/A0] [get_bd_pins decimal_counter_0/Qa]
+connect_bd_net [get_bd_pins decode138_0/A1] [get_bd_pins decimal_counter_0/Qb]
+connect_bd_net [get_bd_pins decode138_0/A2] [get_bd_pins decimal_counter_0/Qc]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decode138_0/E2_n]
+connect_bd_net [get_bd_ports GND] [get_bd_pins decode138_0/E3_n]
+connect_bd_net [get_bd_pins decimal_counter_0/Qd] [get_bd_pins mux_8_to_1_3/S_n]
+connect_bd_net [get_bd_pins mux_8_to_1_1/S_n] [get_bd_pins decimal_counter_0/Qd]
+connect_bd_net [get_bd_pins mux_8_to_1_2/S_n] [get_bd_pins decimal_counter_0/Qd]
+connect_bd_net [get_bd_pins mux_8_to_1_0/S_n] [get_bd_pins decimal_counter_0/Qd]
+startgroup
+create_bd_port -dir O Y0_n
+connect_bd_net [get_bd_pins /decode138_0/Y0_n] [get_bd_ports Y0_n]
+endgroup
+startgroup
+create_bd_port -dir O Y1_n
+connect_bd_net [get_bd_pins /decode138_0/Y1_n] [get_bd_ports Y1_n]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:xup:BCD2SEG7:1.0 BCD2SEG7_0
+endgroup
+set_property location {6 1260 -700} [get_bd_cells BCD2SEG7_0]
+connect_bd_net [get_bd_pins BCD2SEG7_0/BCD_A] [get_bd_pins mux_8_to_1_1/Q]
+connect_bd_net [get_bd_pins BCD2SEG7_0/BCD_B] [get_bd_pins mux_8_to_1_3/Q]
+connect_bd_net [get_bd_pins BCD2SEG7_0/BCD_C] [get_bd_pins mux_8_to_1_0/Q]
+connect_bd_net [get_bd_pins BCD2SEG7_0/BCD_D] [get_bd_pins mux_8_to_1_2/Q]
+startgroup
+create_bd_port -dir IO BI_RBO_n
+connect_bd_net [get_bd_pins /BCD2SEG7_0/BI_RBO_n] [get_bd_ports BI_RBO_n]
+endgroup
+startgroup
+create_bd_port -dir O a
+connect_bd_net [get_bd_pins /BCD2SEG7_0/a] [get_bd_ports a]
+endgroup
+startgroup
+create_bd_port -dir O b
+connect_bd_net [get_bd_pins /BCD2SEG7_0/b] [get_bd_ports b]
+endgroup
+startgroup
+create_bd_port -dir O c
+connect_bd_net [get_bd_pins /BCD2SEG7_0/c] [get_bd_ports c]
+endgroup
+startgroup
+create_bd_port -dir O d
+connect_bd_net [get_bd_pins /BCD2SEG7_0/d] [get_bd_ports d]
+endgroup
+startgroup
+create_bd_port -dir O e
+connect_bd_net [get_bd_pins /BCD2SEG7_0/e] [get_bd_ports e]
+endgroup
+startgroup
+create_bd_port -dir O f
+connect_bd_net [get_bd_pins /BCD2SEG7_0/f] [get_bd_ports f]
+endgroup
+startgroup
+create_bd_port -dir O g
+connect_bd_net [get_bd_pins /BCD2SEG7_0/g] [get_bd_ports g]
+endgroup
+connect_bd_net [get_bd_pins decode138_0/E1] [get_bd_pins six_not_gate_0/Y1]
+delete_bd_objs [get_bd_nets Net]
+connect_bd_net [get_bd_pins BCD2SEG7_0/RBI_n] [get_bd_pins six_not_gate_0/Y1]
+connect_bd_net [get_bd_pins BCD2SEG7_0/LT_n] [get_bd_pins six_not_gate_0/Y1]
+validate_bd_design
+connect_bd_net [get_bd_pins four_2_input_nand_gate_1/A4] [get_bd_pins four_2_input_nand_gate_0/Y2]
+disconnect_bd_net /xup_jk_0_Q1_n [get_bd_pins four_2_input_nand_gate_0/A4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_1/B4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_and_gate_1/A3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_and_gate_1/B3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_and_gate_1/A4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_and_gate_1/B4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins two_4_input_and_gate_0/A2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins two_4_input_and_gate_0/B2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins two_4_input_and_gate_0/C2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins two_4_input_and_gate_0/D2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/A2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/B2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/C2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/A3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/B3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins tri_3_input_nand_gate_1/C3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/A2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/B2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/A3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/B3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/A4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins four_2_input_nand_gate_2/B4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_1/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_1/D6] [get_bd_pins mux_8_to_1_1/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_1/D5] [get_bd_pins mux_8_to_1_1/D6]
+connect_bd_net [get_bd_pins mux_8_to_1_1/D4] [get_bd_pins mux_8_to_1_1/D5]
+connect_bd_net [get_bd_pins mux_8_to_1_1/D3] [get_bd_pins mux_8_to_1_1/D4]
+connect_bd_net [get_bd_pins mux_8_to_1_1/D2] [get_bd_pins mux_8_to_1_1/D3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_3/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_3/D6] [get_bd_pins mux_8_to_1_3/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_3/D5] [get_bd_pins mux_8_to_1_3/D6]
+connect_bd_net [get_bd_pins mux_8_to_1_3/D4] [get_bd_pins mux_8_to_1_3/D5]
+connect_bd_net [get_bd_pins mux_8_to_1_3/D3] [get_bd_pins mux_8_to_1_3/D4]
+connect_bd_net [get_bd_pins mux_8_to_1_3/D2] [get_bd_pins mux_8_to_1_3/D3]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_0/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_0/D6] [get_bd_pins mux_8_to_1_0/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_0/D5] [get_bd_pins mux_8_to_1_0/D6]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_0/D4]
+connect_bd_net [get_bd_pins mux_8_to_1_0/D3] [get_bd_pins mux_8_to_1_0/D4]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_0/D2]
+connect_bd_net [get_bd_ports GND] [get_bd_pins mux_8_to_1_2/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D6] [get_bd_pins mux_8_to_1_2/D7]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D5] [get_bd_pins mux_8_to_1_2/D6]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D4] [get_bd_pins mux_8_to_1_2/D5]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D3] [get_bd_pins mux_8_to_1_2/D4]
+connect_bd_net [get_bd_pins mux_8_to_1_2/D2] [get_bd_pins mux_8_to_1_2/D3]
+save_bd_design
+validate_bd_design
+connect_bd_net [get_bd_pins six_not_gate_0/A3] [get_bd_pins six_not_gate_0/A2]
+connect_bd_net [get_bd_ports SWI] [get_bd_pins six_not_gate_0/A4]
+connect_bd_net [get_bd_ports SWI] [get_bd_pins six_not_gate_0/A5]
+connect_bd_net [get_bd_pins six_not_gate_0/A6] [get_bd_pins six_not_gate_0/A5]
+save_bd_design
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/A4] [get_bd_pins four_2_input_nand_gate_0/B3]
+disconnect_bd_net /four_2_input_nand_gate_0_Y2 [get_bd_pins four_2_input_nand_gate_0/A4]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/A4] [get_bd_pins xup_jk_1/Q2_n]
+save_bd_design
+disconnect_bd_net /xup_jk_1_Q2_n [get_bd_pins four_2_input_nand_gate_0/A4]
+connect_bd_net [get_bd_pins four_2_input_nand_gate_0/A4] [get_bd_pins xup_jk_1/Q1]
+save_bd_design
+validate_bd_design
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+open_bd_design {D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd}
+generate_target all [get_files  D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd]
+export_ip_user_files -of_objects [get_files D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd] -directory D:/digital/Digital-Experiment/12counter/12counter.ip_user_files/sim_scripts -force -quiet
+make_wrapper -files [get_files D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd] -top
+add_files -norecurse D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/hdl/twelve_counter_wrapper.v
+open_bd_design {D:/digital/Digital-Experiment/12counter/12counter.srcs/sources_1/bd/twelve_counter/twelve_counter.bd}

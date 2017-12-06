@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Nov 14 23:14:50 2017">
+<application name="pa" timeStamp="Wed Dec 06 14:32:32 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="ff096a5f7c8343e7837ea0062114fe5e" type="ProjectID"/>
 <property name="ProjectIteration" value="16" type="ProjectIteration"/>
@@ -23,9 +23,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RunSynthesis" value="0" type="JavaHandler"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="12" type="GuiMode"/>
+<property name="GuiMode" value="20" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="11" type="TclMode"/>
+<property name="TclMode" value="18" type="TclMode"/>
 </item>
 </section>
 </application>

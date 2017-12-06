@@ -34,23 +34,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_four_2_input_and_gate_0_0/ALU_1_four_2_input_and_gate_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_mux_8_to_1_0_1/ALU_1_mux_8_to_1_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_four_2_input_and_gate_0_2/ALU_1_four_2_input_and_gate_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_decode138_0_1/ALU_1_decode138_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_four_2_input_and_gate_0_1/ALU_1_four_2_input_and_gate_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_decode138_0_0/ALU_1_decode138_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_mux_8_to_1_0_0/ALU_1_mux_8_to_1_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_six_not_gate_0_0/ALU_1_six_not_gate_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_four_2_input_or_gate_0_0/ALU_1_four_2_input_or_gate_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="hdl/ALU_1.v"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_six_not_gate_1_0/ALU_1_six_not_gate_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_six_not_gate_0_1/ALU_1_six_not_gate_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ip/ALU_1_four_2_input_and_gate_0_4/ALU_1_four_2_input_and_gate_0_4.xci"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="ALU_1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="hdl/ALU_1.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="hw_handoff/ALU_1_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ALU_1.bd" FileRelPathName="hw_handoff/ALU_1.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ALU_1/hdl/ALU_1_wrapper.v">
         <FileInfo>
