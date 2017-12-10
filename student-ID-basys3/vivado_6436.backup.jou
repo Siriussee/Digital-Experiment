@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Dec 06 15:22:27 2017
+# Process ID: 6436
+# Current directory: D:/digital/Digital-Experiment/student-ID-basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3064 D:\digital\Digital-Experiment\student-ID-basys3\student-ID-basys3.xpr
+# Log file: D:/digital/Digital-Experiment/student-ID-basys3/vivado.log
+# Journal file: D:/digital/Digital-Experiment/student-ID-basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/digital/Digital-Experiment/student-ID-basys3/student-ID-basys3.xpr
+open_run impl_1
