@@ -1,0 +1,71 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Fri Dec 15 13:28:29 2017
+| Host         : SiriusPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file clock_alarm_control_sets_placed.rpt
+| Design       : clock_alarm
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    18 |
+| Minimum Number of register sites lost to control set restrictions |    71 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            3 |
+| No           | No                    | Yes                    |              52 |           10 |
+| No           | Yes                   | No                     |               6 |            4 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              56 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------+-------------------------+------------------+----------------+
+|  Clock Signal  |     Enable Signal     |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++----------------+-----------------------+-------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                       |                         |                1 |              1 |
+|  clk1_BUFG     | alarm_minute[6]       | alarm_minute[7]_i_1_n_0 |                1 |              4 |
+|  clk1_BUFG     | alarm_minute[2]       | alarm_minute[7]_i_1_n_0 |                1 |              4 |
+|  clk1_BUFG     | year[7]_i_2_n_0       | year[7]_i_1_n_0         |                1 |              4 |
+|  clk1_BUFG     | year[3]_i_1_n_0       | year[7]_i_1_n_0         |                1 |              4 |
+|  clk1_BUFG     | second[7]_i_2_n_0     | second[7]_i_1_n_0       |                1 |              4 |
+|  clk1_BUFG     | month[7]_i_2_n_0      | month[1]                |                1 |              4 |
+|  clk1_BUFG     | minute[7]_i_2_n_0     | minute[7]_i_1_n_0       |                1 |              4 |
+|  clk1_BUFG     | minute[3]_i_1_n_0     | minute[7]_i_1_n_0       |                1 |              4 |
+|  clk1_BUFG     | led[3]_i_2_n_0        | led[3]_i_1_n_0          |                1 |              4 |
+|  clk1_BUFG     | hour[7]_i_2_n_0       | hour[7]_i_1_n_0         |                2 |              4 |
+|  clk1_BUFG     | hour[3]_i_1_n_0       | hour[7]_i_1_n_0         |                2 |              4 |
+|  clk1_BUFG     | day[7]_i_2_n_0        | day[1]                  |                1 |              4 |
+|  clk1_BUFG     | alarm_hour[7]_i_2_n_0 | alarm_hour[7]_i_1_n_0   |                1 |              4 |
+|  clk1_BUFG     | alarm_hour[3]_i_1_n_0 | alarm_hour[7]_i_1_n_0   |                2 |              4 |
+|  clk1_BUFG     |                       |                         |                2 |              6 |
+|  clk1_BUFG     |                       | rst_IBUF                |                4 |              6 |
+|  clk_IBUF_BUFG |                       | clr_IBUF                |               10 |             52 |
++----------------+-----------------------+-------------------------+------------------+----------------+
+
+

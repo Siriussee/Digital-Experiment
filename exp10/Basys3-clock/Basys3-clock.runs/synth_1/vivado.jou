@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Dec 15 13:27:46 2017
+# Process ID: 11192
+# Current directory: D:/digital/Digital-Experiment/exp10/Basys3-clock/Basys3-clock.runs/synth_1
+# Command line: vivado.exe -log clock_alarm.vds -mode batch -messageDb vivado.pb -notrace -source clock_alarm.tcl
+# Log file: D:/digital/Digital-Experiment/exp10/Basys3-clock/Basys3-clock.runs/synth_1/clock_alarm.vds
+# Journal file: D:/digital/Digital-Experiment/exp10/Basys3-clock/Basys3-clock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source clock_alarm.tcl -notrace
